@@ -1,8 +1,8 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: salmon;
+    background-color: black;
 }
 
-h1{
-    color: black;
+h1, h2, h3, p, ul{
+    color: whitesmoke;
 }
