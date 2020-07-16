@@ -6,3 +6,29 @@ body {
 h1, h2, h3, p, ul{
     color: whitesmoke;
 }
+
+/** The Figure with Optional Caption Element
+@link: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure **/
+
+figure {
+    border: thin whitesmoke solid;
+    display: flex;
+    padding: 5px;
+    max-width: 500px;
+    margin: auto;
+}
+
+img {
+    max-width: 500px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+/** END of The Figure with Optional Caption Element */
+
