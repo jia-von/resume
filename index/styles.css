@@ -1,10 +1,10 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: black;
+    background-color: #f5f5f5;
 }
 
-h1, h2, h3, p, ul{
-    color: whitesmoke;
+h1, h2, h3, h4, p, ul{
+    color: #000000;
 }
 
 /** The Figure with Optional Caption Element
@@ -22,6 +22,7 @@ figure {
 img {
     max-width: 100%;
 }
+
 figcaption {
     background-color: #222;
     color: #fff;
@@ -30,7 +31,5 @@ figcaption {
     text-align: center;
 
     
-}
-
-/** END of The Figure with Optional Caption Element */
+}/** END of The Figure with Optional Caption Element */
 
