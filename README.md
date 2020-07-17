@@ -1,7 +1,7 @@
 # resume
 Milestone 1: Front-End Project
 
-Trello Board, Milesstone 1 Front-End Project: https://trello.com/b/TLZcsTun/milesstone-1-front-end-project
+Trello Board, Milestone 1 Front-End Project: https://trello.com/b/TLZcsTun/milesstone-1-front-end-project
 
 References:
 
