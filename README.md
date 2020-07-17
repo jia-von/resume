@@ -1,4 +1,4 @@
-# resume
+# Resume
 Milestone 1: Front-End Project
 
 Trello Board, Milestone 1 Front-End Project: https://trello.com/b/TLZcsTun/milesstone-1-front-end-project
