@@ -1,6 +1,8 @@
 # resume
 Milestone 1: Front-End Project
 
+Trello Board, Milesstone 1 Front-End Project: https://trello.com/b/TLZcsTun/milesstone-1-front-end-project
+
 References:
 
 MDN Contributors, 2020. The Figure with Optional Caption element. URL: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure. Accessed on July 16, 2020. 
