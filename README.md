@@ -3,6 +3,8 @@ Milestone 1: Front-End Project
 
 Trello Board, Milestone 1 Front-End Project: https://trello.com/b/TLZcsTun/milesstone-1-front-end-project
 
+Image optimization was used with link: https://tinypng.com/  
+
 Information from the form in Contact Me page sent to PHP using Post method (Robbins, 2018).
 
 References:
