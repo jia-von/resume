@@ -10,6 +10,7 @@ h1, h2, h3, h4, p, ul{
 /** The Figure with Optional Caption Element
 @link: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure **/
 
+/*Responsible for controlling the figure*/
 figure {
     border: thin whitesmoke solid;
     display: flex;
@@ -17,19 +18,21 @@ figure {
     padding: 5px;
     max-width: 500px;
     margin: auto;
-}
+}/*End of figure*/
 
+/*Responsible for controlling the properties of the image*/
 img {
     max-width: 100%;
-}
+}/*End of img*/
 
+/*Responsible for controlling the properties of the caption of the images*/
 figcaption {
     background-color: #222;
     color: #fff;
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
+}/*figcaption end*/
 
-    
-}/** END of The Figure with Optional Caption Element */
+/** END of The Figure with Optional Caption Element */
 
