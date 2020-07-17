@@ -3,6 +3,8 @@ Milestone 1: Front-End Project
 
 Trello Board, Milestone 1 Front-End Project: https://trello.com/b/TLZcsTun/milesstone-1-front-end-project
 
+Information from the form in Contact Me page sent to PHP using Post method (Robbins, 2018).
+
 References:
 
 MDN Contributors, 2020. The Figure with Optional Caption element. URL: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure. Accessed on July 16, 2020. 
