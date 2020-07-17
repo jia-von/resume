@@ -10,11 +10,13 @@ h1, h2, h3, h4, p, ul{
 figure {
     display: flex;
     flex-direction: column;
+    max-width: 500px;
 }
 
 img{
     width: 100%;
     padding-top: 3px;
+    vertical-align: top;
 }
 
 /*<figcaption>: The Figure Caption element*/
@@ -25,5 +27,6 @@ figcaption {
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
-}/*end of figcaption*/
+
+}
 
