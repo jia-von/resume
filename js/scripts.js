@@ -1,12 +1,20 @@
-//JavaScript for Contact Form are based on (Grieve, 2020) method. References are available in readme.md
-
+//JavaScript for Contact Form are based on (Grieve, 2020) method. References are available in README.md.
 //camelCase and PascalCase were used in this JavaScript according to (Wieruch, 2019)
 
-//<input type="email">
-const userEmail = document.querySelector("input")
+//---IMPORTANT!!----
+//Part of the rubric of this assignment was to only use 'let' and 'const'. No 'var' is allowed.
+//No hardcoding allowed; use 'constants' and 'values' instead.
+
+
+//<input type="email" name="email" maxlength="50">
+//const uses camelCase
+const userEmail = document.getElementsByName("email");
 
 //<input type="text" name="subject">
+const emailSubject = document.getElementsByName("subject");
 
 //<textarea name="body">
+const textArea = document.getElementsByName("body");
 
-//Word filter from Battlestar Galactica: "feldercarb", "frack", "skinjob", "vulgacarb"
+//Mandatory Rubric: Word filter from Battlestar Galactica: "feldercarb", "frack", "skinjob", "vulgacarb"
+let wordArray =["feldercarb","frack","skinjob","vulgacarb"];
