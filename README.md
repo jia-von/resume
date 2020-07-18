@@ -15,3 +15,5 @@ Robbins, 2018. Learning Web Design, Fifth Edition. A Beginner's Guide to HML, CS
 
 W3docs, 2020. How to Create Mailto Forms. URL: https://www.w3docs.com/snippets/html/how-to-create-mailto-forms.html. Accessed on July 17, 2020. 
 
+Wieruch, 2019. JavaScript Naming Conventions, October 06, 2019. URL: https://www.robinwieruch.de/javascript-naming-conventions. Accessed on July 17, 2020.
+
