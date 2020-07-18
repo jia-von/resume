@@ -5,9 +5,9 @@ Trello Board, Milestone 1 Front-End Project: https://trello.com/b/TLZcsTun/miles
 
 Image optimization was used with link: https://tinypng.com/  
 
-Information from the form in Contact Me page sent to PHP using Post method (Robbins, 2018).
-
 References:
+
+Grieve, 2020. Shopping List JavaScript Practice by James Grieve posted on July 10, 2020. URL:https://github.com/TECHCareers-by-Manpower/js-practice/tree/master/Shopping%20List. 
 
 MDN Contributors, 2020. The Figure with Optional Caption element. URL: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure. Accessed on July 16, 2020. 
 
