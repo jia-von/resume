@@ -23,18 +23,16 @@
         <h2><a href="index.html">Home</a></h2>
 
     <!--Create form element based on Exercise 9-1 (Robbins, 2018)-->
-    <form action="mailto:jiavon@ualberta.ca" method="post">
+    <form action="mailto:jiavon@ualberta.ca" method="get">
 
     <!--Page 184 from (Robbins, 2018), how to make a basic form instructions-->
     <!--Start of the contact form-->
-        <p>
             <label for="email">Email:</label> 
-                <input type="email" name="email" id="email" maxlength="50">
+                <input type="email" name="email" id="email" maxlength="50" required>
             <label for="subject">Subject:</label>
-                <input type="text" name="subject" id="subject" maxlength="150">
+                <input type="text" name="subject" id="subject" maxlength="150" required>
             <label for="message">Message:</label>
-                <textarea name="body" id="message"></textarea>
-        </p>
+                <textarea name="body" id="message" required></textarea>
     <!--End for contact form -->
 
     <!--Page 190 from (Robbins, 2018), submit and reset buttons-->

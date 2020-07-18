@@ -4,30 +4,80 @@
 //---IMPORTANT!!----
 //Part of the rubric of this assignment was to only use 'let' and 'const'. No 'var' is allowed.
 //No hardcoding allowed; use 'constants' and 'values' instead.
+//Variables and constants are in camelcase, functions and methods are in pascalcase.
 
 //<input type="email" name="email" maxlength="50">
 //const uses camelCase
-const userEmail = document.getElementById("email");
+const userEmail = document.getElementById('email');
 
 //<input type="text" name="subject">
-const emailSubject = document.getElementById("subject");
+const emailSubject = document.getElementById('subject');
 
 //<textarea name="body">
-const textArea = document.getElementById("body");
+const textArea = document.getElementById('body');
 
 //<button type="submit" name="submit" id="submit">Submit</button>
-const submitButton = document.getElementById("submit");
+const submitButton = document.getElementById('submit');
 
 //Mandatory Rubric: Word filter from Battlestar Galactica: "feldercarb", "frack", "skinjob", "vulgacarb"
 //I was hoping for Rick and Morty's Sea Cucumber :(
-let wordArray = ["feldercarb","frack","skinjob","vulgacarb"];
+let wordArray = ['feldercarb','frack','skinjob','vulgacarb'];
 
-//1. Collect userinput fields from userEmail, emailSubject, textArea, and submit Button
+//1. Collect userinput fields from emailSubject, textArea, and submit Button
+//The use of constraint validation features @link: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#htmlattrdefvalue 
 
-//2. user decided to be asshole and type these words "feldercarb","frack","skinjob","vulgacarb"
+//userEmail input event listener
+userEmail.addEventListener('input',() => {
+    userEmail.setCustomValidity('');
+    userEmail.checkValidity();
+});
 
-    //2 a. to scan the message from user, we need a loop and for this code we will use  'for'.
+userEmail.addEventListener('invalid', () => {
+    if (userEmail.value === ''){
+        userEmail.setCustomValidity('Enter your email');
+    } else if (userEmail.value === 'feldercarb', 'frack', 'skinjob', 'vulgacarb') 
+    //will refactor later with an array but hard code it now cause I am dumb AF
+        {
+        userEmail.setCustomValidity('Email cannot contain Battlestar Galatica Swearwords');
+        }
+}); //end of userEmail input event listener
 
+//emailSubject input event listener
+emailSubject.addEventListener('input',() => {
+    emailSubject.setCustomValidity('');
+    emailSubject.checkValidity();
+});
+
+emailSubject.addEventListener('invalid', () => {
+    if (emailSubject.value === ''){
+        emailSubject.setCustomValidity('Enter a subject');
+    } else if (emailSubject.value === 'feldercarb', 'frack', 'skinjob', 'vulgacarb') 
+    //will refactor later with an array but hard code it now cause I am dumb AF
+        {
+        emailSubject.setCustomValidity('Subject line cannot contain Battlestar Galatica Swearwords');
+        }
+}); //end of emailSubject input event listener
+
+//textArea input event listener
+textArea.addEventListener('input',() => {
+    textArea.setCustomValidity('');
+    textArea.checkValidity();
+});
+
+textArea.addEventListener('invalid', () => {
+    if (textArea.value === ''){
+        textArea.setCustomValidity('Enter a subject');
+    } else if (textArea.value === 'feldercarb', 'frack', 'skinjob', 'vulgacarb') 
+    //will refactor later with an array but hard code it now cause I am dumb AF
+        {
+        textArea.setCustomValidity('Body cannot contain Battlestar Galatica Swearwords');
+        }
+}); //end of textArea input event listener
+
+
+    //call action with method
+
+    // Refactoring the hard coded value with Array 
     //Statement 1 is executed (one time) before the execution of the code block.
         //I will start int i = 0 to scan the first thing in array. 
 
