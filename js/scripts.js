@@ -8,13 +8,13 @@
 
 //<input type="email" name="email" maxlength="50">
 //const uses camelCase
-const userEmail = document.getElementsByName("email");
+const userEmail = document.getElementById("email");
 
 //<input type="text" name="subject">
-const emailSubject = document.getElementsByName("subject");
+const emailSubject = document.getElementById("subject");
 
 //<textarea name="body">
-const textArea = document.getElementsByName("body");
+const textArea = document.getElementById("body");
 
 //Mandatory Rubric: Word filter from Battlestar Galactica: "feldercarb", "frack", "skinjob", "vulgacarb"
 let wordArray =["feldercarb","frack","skinjob","vulgacarb"];
