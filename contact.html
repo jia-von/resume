@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/styles.css">
         
         <!--JavaScript link-->
-        <script src="scripts.js"></script>
+        <script src="js/scripts.js"></script>
     </head>
  <body>
 
@@ -24,13 +24,13 @@
 
     <!--Create form element based on Exercise 9-1 and POST method on Page 192 (Robbins, 2018)-->
     <!--How to Create Mailto Forms @link: https://www.w3docs.com/snippets/html/how-to-create-mailto-forms.html-->
-    <form action="mailto:jiavon@ualberta.ca" method="POST" enctype="text/plain">
+    <form action="mailto:jiavon@ualberta.ca">
 
     <!--Page 184 from (Robbins, 2018), how to make a basic form instructions-->
     <!--Start of the contact form-->
-        <p>Name<input type="text" name="name" maxlength="50"></p>
-        <p>Email<input type="email" name="email" maxlength="50"></p>
-        <p><textarea>Message</textarea></p>
+        <p>Email: <input type="email" name="email" maxlength="50"></p>
+        <p>Subject: <input type="text" name="subject" maxlength="150"></p>
+        <p>Message: <textarea name="body"></textarea></p>
     <!--End for contact form -->
 
     <!--Page 190 from (Robbins, 2018), submit and reset buttons-->
