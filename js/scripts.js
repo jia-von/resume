@@ -19,70 +19,27 @@ const textArea = document.getElementById('body');
 //<button type="submit" name="submit" id="submit">Submit</button>
 const submitButton = document.getElementById('submit');
 
+const contactForm = document.querySelector('form');
+
 //Mandatory Rubric: Word filter from Battlestar Galactica: "feldercarb", "frack", "skinjob", "vulgacarb"
-//I was hoping for Rick and Morty's Sea Cucumber :(
 let wordArray = ['feldercarb','frack','skinjob','vulgacarb'];
 
-//1. Collect userinput fields from emailSubject, textArea, and submit Button
-//The use of constraint validation features @link: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#htmlattrdefvalue 
+//---GOAL IMMA JUST WANTING TO MAKE WORD FILTER FORM why is it so difficult
 
-//userEmail input event listener
-userEmail.addEventListener('input',() => {
-    userEmail.setCustomValidity('');
-    userEmail.checkValidity();
-});
+//A. global has been made above, but now I want to have a place where they call the methods to excute the something for event listner when the user hit submit. 
 
-userEmail.addEventListener('invalid', () => {
-    if (userEmail.value === ''){
-        userEmail.setCustomValidity('Enter your email');
-    } else if (userEmail.value === 'feldercarb', 'frack', 'skinjob', 'vulgacarb') 
-    //will refactor later with an array but hard code it now cause I am dumb AF
-        {
-        userEmail.setCustomValidity('Email cannot contain Battlestar Galatica Swearwords');
-        }
-}); //end of userEmail input event listener
-
-//emailSubject input event listener
-emailSubject.addEventListener('input',() => {
-    emailSubject.setCustomValidity('');
-    emailSubject.checkValidity();
-});
-
-emailSubject.addEventListener('invalid', () => {
-    if (emailSubject.value === ''){
-        emailSubject.setCustomValidity('Enter a subject');
-    } else if (emailSubject.value === 'feldercarb', 'frack', 'skinjob', 'vulgacarb') 
-    //will refactor later with an array but hard code it now cause I am dumb AF
-        {
-        emailSubject.setCustomValidity('Subject line cannot contain Battlestar Galatica Swearwords');
-        }
-}); //end of emailSubject input event listener
-
-//textArea input event listener
-textArea.addEventListener('input',() => {
-    textArea.setCustomValidity('');
-    textArea.checkValidity();
-});
-
-textArea.addEventListener('invalid', () => {
-    if (textArea.value === ''){
-        textArea.setCustomValidity('Enter a subject');
-    } else if (textArea.value === 'feldercarb', 'frack', 'skinjob', 'vulgacarb') 
-    //will refactor later with an array but hard code it now cause I am dumb AF
-        {
-        textArea.setCustomValidity('Body cannot contain Battlestar Galatica Swearwords');
-        }
-}); //end of textArea input event listener
-
-
-    //call action with method
+function formAction(){
+    //1. receiving user input
+    //2. user type their information in the form
+    //3. user completed typing form and hit submit button
+    //4. by clicking the submit button, the word checking intiated 
+        //if battlestar galactica detected, output is bad user 
 
     // Refactoring the hard coded value with Array 
     //Statement 1 is executed (one time) before the execution of the code block.
         //I will start int i = 0 to scan the first thing in array. 
 
     //Statement 2 defines the condition for executing the code block.
-        //I will terminate with i<4 (because i only have 4 words to deal with)
         //Update as of July 18, 2020 replace statement 2 with wordArray.legth
 
     //Statement 3 is executed (every time) after the code block has been executed.
@@ -94,6 +51,7 @@ textArea.addEventListener('invalid', () => {
         //if user input empty userEmail, emailSubject, and Textbody a warning will say "Emtpy field detected"
 
         //if user decide to use one of the 4 swear words the warning will be "This form do not accept Battlestar Galactica Swear Words
+}
 
     //4. if the user is nice, the message is sent 
 
