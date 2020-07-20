@@ -7,7 +7,7 @@
 //Variables and constants are in camelcase, functions and methods are in pascalcase.
 
 
-const contactForm = document.querySelector('form');
+const contactForm = document.getElementById('contactForm');
 //<input type="email" name="email" maxlength="50">
 //const uses camelCase
 const userEmail = document.getElementById('email');
@@ -21,6 +21,8 @@ const textArea = document.getElementById('body');
 //<button type="submit" name="submit" id="submit">Submit</button>
 const submitButton = document.getElementById('submit');
 
+//<button type="reset" name="reset" id="reset">Reset</button>
+const resetButton = document.getElementById('resetForm');
 
 //Mandatory Rubric: Word filter from Battlestar Galactica: "feldercarb", "frack", "skinjob", "vulgacarb"
 let wordArray = ['feldercarb','frack','skinjob','vulgacarb'];
@@ -28,15 +30,36 @@ let wordArray = ['feldercarb','frack','skinjob','vulgacarb'];
 //A. global has been made above, but now I want to have a place where they call the methods to excute the something for event listner when the user hit submit. 
 
 //submitButton is the event listener to intiate check the form for Battlestar Galactica.
-contactForm.addEventListener('submit',formAction);
-//end of the event listner
+submitButton.addEventListener('click', formAction);
+//end of the event listener
+
 
 //Initiate form validation. 
-function formAction(){
-    if ((textArea.value === 'feldercarb' || textArea.value === 'frack' || textArea.value === 'skinjob' || textArea.value === 'vulgarcarb'))
-        {
-        textArea.setCustomValidity('Do not use Battlestar Galactica Profanities');}
+function formAction (){
+    //userEmail check
+    userEmail.setCustomValidity('');
+    userEmail.checkValidity();
+    if (userEmail.value ===''){
+        userEmail.setCustomValidity('Enter your email');
+    }
+    else if (userEmail.value === 'feldercarb', 'frack', 'skinjob','vulgacarb'){
+        userEmail.setCustomValidity('Please do not use profanity in email');
+    }//end of userEmail check
 
+    //need to create a loop
+function formAction () {
+    
+    //emailSubject check
+    emailSubject.setCustomValidity('');
+    emailSubject.checkValidity();
+    if (emailSubject.value ===''){
+        emailSubject.setCustomValidity('Enter a subject');
+    }
+    else if (emailSubject.value === 'feldercarb', 'frack', 'skinjob','vulgacarb'){
+        emailSubject.setCustomValidity('Please do not use profanity in subject');
+    }//end of email subject check
+}
+}
     // a. Want to get the right data, in the right format
 
 
@@ -64,7 +87,6 @@ function formAction(){
         //if user input empty userEmail, emailSubject, and Textbody a warning will say "Emtpy field detected"
 
         //if user decide to use one of the 4 swear words the warning will be "This form do not accept Battlestar Galactica Swear Words
-}
 
     //4. if the user is nice, the message is sent 
 
