@@ -34,7 +34,7 @@ submitButton.addEventListener('click', formAction);
 //end of the event listener
 
 
-//Initiate form validation. 
+//Initiate form validation. @link: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#htmlattrdefvalue
 function formAction (){
     //userEmail check
     userEmail.setCustomValidity('');
