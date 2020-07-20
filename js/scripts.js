@@ -42,7 +42,7 @@ function formAction (){
     if (userEmail.value ===''){
         userEmail.setCustomValidity('Enter your email');
     }
-    else if (userEmail.value === 'feldercarb', 'frack', 'skinjob','vulgacarb'){
+    else if (userEmail.value === 'feldercarb', 'frack', 'skinjob','vulgacarb'){ //Need to refactor into a loop 
         userEmail.setCustomValidity('Please do not use profanity in email');
     }//end of userEmail check
 
