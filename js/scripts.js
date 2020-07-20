@@ -6,6 +6,8 @@
 //No hardcoding allowed; use 'constants' and 'values' instead.
 //Variables and constants are in camelcase, functions and methods are in pascalcase.
 
+
+const contactForm = document.querySelector('form');
 //<input type="email" name="email" maxlength="50">
 //const uses camelCase
 const userEmail = document.getElementById('email');
@@ -19,19 +21,30 @@ const textArea = document.getElementById('body');
 //<button type="submit" name="submit" id="submit">Submit</button>
 const submitButton = document.getElementById('submit');
 
-const contactForm = document.querySelector('form');
 
 //Mandatory Rubric: Word filter from Battlestar Galactica: "feldercarb", "frack", "skinjob", "vulgacarb"
 let wordArray = ['feldercarb','frack','skinjob','vulgacarb'];
 
-//---GOAL IMMA JUST WANTING TO MAKE WORD FILTER FORM why is it so difficult
-
 //A. global has been made above, but now I want to have a place where they call the methods to excute the something for event listner when the user hit submit. 
 
+//submitButton is the event listener to intiate check the form for Battlestar Galactica.
+contactForm.addEventListener('submit',formAction);
+//end of the event listner
+
+//Initiate form validation. 
 function formAction(){
-    //1. receiving user input
+    if ((textArea.value === 'feldercarb' || textArea.value === 'frack' || textArea.value === 'skinjob' || textArea.value === 'vulgarcarb'))
+        {
+        textArea.setCustomValidity('Do not use Battlestar Galactica Profanities');}
+
+    // a. Want to get the right data, in the right format
+
+
+    //1. scan for words in the form
+        
     //2. user type their information in the form
     //3. user completed typing form and hit submit button
+        //get the value of the userinput and the DOM reference variable.
     //4. by clicking the submit button, the word checking intiated 
         //if battlestar galactica detected, output is bad user 
 
