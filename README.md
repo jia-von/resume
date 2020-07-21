@@ -11,7 +11,9 @@ Grieve, 2020. Shopping List JavaScript Practice by James Grieve posted on July 1
 
 MDN Contributors, 2020. The Figure with Optional Caption element. URL: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure. Accessed on July 16, 2020. 
 
-MDM Contributors, 2020. <input>: The Input (Form Input) element. URL:https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#htmlattrdefvalue. Accessed July 20, 2020.
+MDM Contributors, 2020. The Input (Form Input) element. URL:https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#htmlattrdefvalue. Accessed July 20, 2020.
+
+MDM Contributors, 2020. Your first form. URL:https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form. Accessed July 21, 2020.
 
 Robbins, 2018. Learning Web Design, Fifth Edition. A Beginner's Guide to HML, CSS, JavaScript, and Web Graphics by Jennifer Neiderst Robbins. Released on May 16, 2018. O'Reilly Media. ISBN: 978-1-491-96020-2.
 
