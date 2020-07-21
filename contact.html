@@ -11,7 +11,7 @@
         <meta name="author" content="Jia Von">
 
         <!--Style Sheet Styles.CSS-->
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/form.css">
         
         <!--JavaScript link-->
         <script src="js/scripts.js" defer=""></script>
@@ -22,24 +22,23 @@
     <h1>Contact Me</h1> 
         <h2><a href="index.html">Home</a></h2>
 
-    <!--Create form element based on Exercise 9-1 (Robbins, 2018)-->
-    <form action="mailto:jiavon@ualberta.ca" method="get" id="contactForm">
-
-    <!--Page 184 from (Robbins, 2018), how to make a basic form instructions-->
-    <!--Start of the contact form-->
-            <label for="email">Email:</label> 
-                <input type="email" name="email" id="email" maxlength="50" required>
-            <label for="subject">Subject:</label>
-                <input type="text" name="subject" id="subject" maxlength="150" required>
-            <label for="message">Message:</label>
-                <textarea name="body" id="message" required></textarea>
-    <!--End for contact form -->
-
-    <!--Page 190 from (Robbins, 2018), submit and reset buttons-->
-    <!--Start of Submit and Reset Buttons-->
+        <form action="mailto:jiavon@ualberta.ca" method="get">
+            <ul>
+                <li>
+                    <label for="email">Email:</label> <!--For accessibility-->
+                    <input type="email" name="email" id="email" maxlength="50" required>
+                </li>
+                <li>
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject" maxlength="150" required>
+                </li>
+                <li>
+                    <label for="body">Message:</label>
+                    <textarea name="body" id="body" required></textarea>
+                </li>
+            </ul>
         <button type="submit" name="submit" id="submit">Submit</button>
         <button type="reset" name="resetForm" id="resetForm">Reset</button>
-    <!--End of Submit and Reset Buttons-->
     
     </form>
     <!--End of the form element-->
