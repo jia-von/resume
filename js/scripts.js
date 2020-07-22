@@ -6,19 +6,29 @@
 //No hardcoding allowed; use 'constants' and 'values' instead.
 //Variables and constants are in camelcase, functions and methods are in pascalcase.
 
-
-const contactForm = document.querySelector('form'); 
-const userEmail = document.querySelector('email');
-const emailSubject = document.querySelector('subject');
-const textArea = document.querySelector('body');
+const formList = document.querySelectorAll('input');
+const formBody = document.querySelector('textarea')
 const submitButton = document.querySelector('submit');
-const resetButton = document.querySelector('resetForm');
 let wordArray = ['feldercarb','frack','skinjob','vulgacarb'];
 
-submitButton.addEventListener('click', formAction);
+formList.addEventListener('input', () => {
+    formList.setCustomValidity('');
+    formList.checkValidity();
+});
 
-function formAction () {
-    
-} 
+formList.addEventListener('invalid', () => {
+    if (
+
+
+
+
+
+
+
+
+
+
+
+
 
 
